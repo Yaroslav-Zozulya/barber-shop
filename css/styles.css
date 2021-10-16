@@ -1,0 +1,166 @@
+:root {
+    --header-color: #ffffff;
+    --primary-text-color: #555555;
+    --second-text-color: #303030;
+    --third-text-color: #9da4bd;
+    --primary-title-color: #ffffff;
+    --senondary-title-color: #303030;
+    --accent-color: #ff6c00;
+}
+
+body {
+    font-family: 'open-sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.btn-light {
+    color: #ffffff;
+}
+
+.btn-dark {
+    color: #303030;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #ffffff;
+}
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.pre-title-light {
+    color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title-dark {
+    color: var(--second-text-color);
+}
+
+.after-title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+.after-title-light {
+    color: #9da4bd;
+}
+
+.after-title-dark {
+    color: var(--primary-text-color);
+}
+
+.section-title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.section-title-dark {
+    color: var(--senondary-title-color);
+}
+
+.section-title-light {
+    color: var(--primary-title-color);
+}
+
+/* -----header----- */
+
+.header {
+    background-color: var(--primary-text-color);
+}
+
+.menu-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+/* -----hero----- */
+
+.hero-right {
+    background-color: var(--second-text-color);
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--second-text-color);
+}
+
+.hero-title {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--primary-title-color);
+}
+
+/* -----about----- */
+
+.about-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+/* -----prices----- */
+.prices {
+    background-color: var(--primary-text-color);
+}
+
+.prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--third-text-color);
+}
