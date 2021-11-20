@@ -242,6 +242,8 @@ img {
 }
 
 .menu-link {
+  padding-top: 19px;
+  padding-bottom: 19px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -256,6 +258,8 @@ img {
 }
 
 .header-tel {
+  padding-top: 19px;
+  padding-bottom: 19px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -683,7 +687,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  min-width: 528px;
   min-height: 581px;
   margin: 0 auto;
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
@@ -728,5 +732,47 @@ img {
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
   fill: var(--accent-color);
+}
+
+.modal-form {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.modal-form-label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-form-area {
+  width: 100%;
+  resize: none;
+}
+
+.modal-form-btn-submit {
+  align-self: center;
 }
 /*# sourceMappingURL=main.css.map */

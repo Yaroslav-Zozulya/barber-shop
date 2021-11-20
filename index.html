@@ -623,20 +623,42 @@
                 </li>
             </ul>
         </footer>
-        <div class="backdrop" data-modal>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="modal-btn" data-modal-close>
                     <svg class="modal-btn-icon">
                         <use href="./img/icons.svg#icon-close"></use>
                     </svg>
                 </button>
-                <!-- <form action="#">
-                    <label><input type="text" /></label>
-                    <label><input type="email" /></label>
-                    <label><input type="tel" /></label>
-                    <label><textarea></textarea></label>
-                    <button type="button">Отправить</button>
-                </form> -->
+                <form action="#" class="modal-form">
+                    <p class="modal-form-title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+                    <label class="modal-form-label">
+                        Имя
+                        <span>
+                            <input class="modal-form-input" type="text" />
+                            <svg>
+                                <use href="./img/icons.svg"></use>
+                            </svg>
+                        </span>
+                    </label>
+                    <label class="modal-form-label">
+                        Телефон
+                        <input class="modal-form-input" type="tel" />
+                    </label>
+                    <label class="modal-form-label">
+                        Почта
+                        <input class="modal-form-input" type="email" />
+                    </label>
+                    <label class="modal-form-label">
+                        Комментарий
+                        <textarea class="modal-form-area"></textarea>
+                    </label>
+                    <button class="modal-form-btn-submit" type="button">
+                        Отправить
+                    </button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
