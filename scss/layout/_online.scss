@@ -1,3 +1,19 @@
 .online {
     background-color: var(--senondary-title-color);
 }
+
+.online-container {
+    display: flex;
+}
+
+.online-form {
+    width: 50%;
+}
+
+.contacts {
+    width: 50%;
+    background-image: url(../../img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
