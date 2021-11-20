@@ -1,8 +1,12 @@
+.footer {
+    padding-top: 57px;
+    padding-bottom: 55px;
+}
+
 .footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 127px;
 }
 
 .footer-copy {
@@ -27,9 +31,10 @@
 }
 
 .footer-link {
+    display: block;
     font-weight: 600;
     font-size: 11px;
-    line-height: 1.36px;
+    line-height: 1.36;
     letter-spacing: 0.2em;
     color: #303030;
     transition: color 250ms linear;
