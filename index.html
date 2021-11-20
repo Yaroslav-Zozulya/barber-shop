@@ -623,7 +623,7 @@
                 </li>
             </ul>
         </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button class="modal-btn" data-modal-close>
                     <svg class="modal-btn-icon">
@@ -636,26 +636,62 @@
                     </p>
                     <label class="modal-form-label">
                         Имя
-                        <span>
-                            <input class="modal-form-input" type="text" />
-                            <svg>
-                                <use href="./img/icons.svg"></use>
+                        <span class="modal-form-span">
+                            <input
+                                class="modal-form-input"
+                                type="text"
+                                minlength="3"
+                                pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                                title="Допустимы только знаки кириллицы и латиницы"
+                            />
+                            <svg class="modal-form-input-icon">
+                                <use
+                                    href="./img/icons.svg#icon-user-name"
+                                ></use>
                             </svg>
                         </span>
                     </label>
                     <label class="modal-form-label">
                         Телефон
-                        <input class="modal-form-input" type="tel" />
+                        <span class="modal-form-span">
+                            <input
+                                class="modal-form-input"
+                                type="tel"
+                                minlength="12"
+                                pattern="[0-9]{12}"
+                                title="380123456789"
+                            />
+                            <svg class="modal-form-input-icon">
+                                <use href="./img/icons.svg#icon-user-tel"></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="modal-form-label">
                         Почта
-                        <input class="modal-form-input" type="email" />
+                        <span class="modal-form-span">
+                            <input
+                                class="modal-form-input"
+                                type="email"
+                                required
+                            />
+                            <svg class="modal-form-input-icon">
+                                <use
+                                    href="./img/icons.svg#icon-user-email"
+                                ></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="modal-form-label">
                         Комментарий
-                        <textarea class="modal-form-area"></textarea>
+                        <textarea
+                            class="modal-form-area"
+                            placeholder="Введите текст"
+                        ></textarea>
                     </label>
-                    <button class="modal-form-btn-submit" type="button">
+                    <button
+                        class="btn btn-dark modal-form-btn-submit"
+                        type="submit"
+                    >
                         Отправить
                     </button>
                 </form>
