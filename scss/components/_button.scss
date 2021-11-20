@@ -10,6 +10,7 @@
     letter-spacing: 0.09em;
     text-transform: uppercase;
     background-color: transparent;
+    transition: background-color 250ms linear, color 250ms linear;
 }
 
 .btn-light {

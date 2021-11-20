@@ -18,13 +18,19 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
         <header class="header">
             <div class="container header-container">
                 <nav class="header-nav">
-                    <a href="#" class="header-logo"
+                    <a
+                        href="#"
+                        class="header-logo animate__animated animate__flip"
                         ><svg class="logo-svg">
                             <use href="./img/icons.svg#icon-logo"></use>
                         </svg>
@@ -48,7 +54,11 @@
                     <a class="header-tel" href="tel:+380961111111"
                         >+38 096 111 11 11</a
                     >
-                    <button class="header-btn btn-light btn" type="button">
+                    <button
+                        class="header-btn btn-light btn"
+                        type="button"
+                        data-modal-open
+                    >
                         Онлайн запись
                     </button>
                 </div>
@@ -57,14 +67,16 @@
         <main>
             <section class="hero">
                 <div class="container hero-container">
-                    <ul class="hero-list">
-                        <li class="hero-item">
-                            <a class="hero-link" href="#">Instagram</a>
-                        </li>
-                        <li class="hero-item">
-                            <a class="hero-link" href="#">Youtube</a>
-                        </li>
-                    </ul>
+                    <div class="hero-left">
+                        <ul class="hero-list">
+                            <li class="hero-item">
+                                <a class="hero-link" href="#">Instagram</a>
+                            </li>
+                            <li class="hero-item">
+                                <a class="hero-link" href="#">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="hero-right">
                         <p
                             lang="en"
@@ -611,5 +623,22 @@
                 </li>
             </ul>
         </footer>
+        <div class="backdrop" data-modal>
+            <div class="modal">
+                <button class="modal-btn" data-modal-close>
+                    <svg class="modal-btn-icon">
+                        <use href="./img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <!-- <form action="#">
+                    <label><input type="text" /></label>
+                    <label><input type="email" /></label>
+                    <label><input type="tel" /></label>
+                    <label><textarea></textarea></label>
+                    <button type="button">Отправить</button>
+                </form> -->
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

@@ -1,5 +1,8 @@
 .header {
-    background-color: var(--primary-text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -33,6 +36,7 @@
 
 .header-connect {
     margin-left: auto;
+    padding-right: 5px;
 }
 
 .menu-link {
@@ -41,6 +45,7 @@
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--header-color);
+    transition: color 250ms linear;
 }
 
 .menu-link:hover,
@@ -54,6 +59,7 @@
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--header-color);
+    transition: color 250ms linear;
 }
 
 .header-tel:hover,
