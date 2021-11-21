@@ -710,7 +710,7 @@ img {
   margin: 0 auto;
   padding-top: 130px;
   padding-bottom: 130px;
-  background: url(../../img/contact-bg.png);
+  background: url(./img/contact-bg.png);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -771,7 +771,6 @@ img {
 
 .contacts-link:hover .contacts-link-icon,
 .contacts-link:focus .contacts-link-icon {
-  fill: var(--accent-color);
   stroke: var(--accent-color);
 }
 
