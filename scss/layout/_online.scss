@@ -44,6 +44,7 @@
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     color: var(--primary-title-color);
+    cursor: pointer;
     transition: border-color 250ms linear;
 }
 
@@ -83,6 +84,7 @@
     resize: none;
     background-color: transparent;
     color: var(--primary-title-color);
+    cursor: pointer;
     transition: border-color 250ms linear;
 }
 
