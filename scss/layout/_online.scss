@@ -1,12 +1,12 @@
 .online {
     width: 1280px;
     margin: 0 auto;
-    padding-top: 130px;
+    padding-top: 126px;
     padding-bottom: 130px;
     background: url(../img/contact-bg.png);
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 50%;
     background-color: var(--senondary-title-color);
 }
 
@@ -16,6 +16,89 @@
 
 .online-form {
     width: 50%;
+    // margin-right: 40px;
+}
+
+.online-form-title {
+    margin-bottom: 44px;
+}
+
+.online-form-input-wrap {
+    display: flex;
+}
+
+.online-form-label {
+    margin-bottom: 44px;
+}
+
+.online-form-label:not(:last-child) {
+    margin-right: 30px;
+}
+
+.online-form-input {
+    position: relative;
+    width: 265px;
+    height: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    color: var(--primary-title-color);
+    transition: border-color 250ms linear;
+}
+
+.online-form-area:hover,
+.online-form-area:focus,
+.online-form-input:hover,
+.online-form-input:focus {
+    outline: none;
+    border-color: var(--primary-title-color);
+}
+
+.online-form-input::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 250ms linear;
+}
+
+.online-form-input:hover::placeholder,
+.online-form-input:focus::placeholder {
+    color: var(--primary-title-color);
+}
+
+.online-form-area {
+    display: block;
+    width: 560px;
+    height: 76px;
+    margin-bottom: 44px;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    resize: none;
+    background-color: transparent;
+    color: var(--primary-title-color);
+    transition: border-color 250ms linear;
+}
+
+.online-form-area::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+    transition: color 250ms linear;
+}
+
+.online-form-area:hover::placeholder,
+.online-form-area:focus::placeholder {
+    color: var(--primary-title-color);
 }
 
 .online-contacts {
@@ -68,12 +151,23 @@
     stroke: var(--accent-color);
 }
 
+.contant-link-address {
+    position: relative;
+    padding-left: 40px;
+}
+
 .contacts-link-icon {
     width: 24px;
     height: 24px;
     margin-right: 16px;
     stroke: #9da4bd;
     transition: stroke 250ms linear;
+}
+
+.contacts-link-icon-address {
+    position: absolute;
+    left: 0;
+    top: 6px;
 }
 
 .link-underline {
@@ -94,16 +188,4 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--third-text-color);
-}
-
-.contacts-item-address {
-    display: flex;
-}
-
-.contant-link-address {
-    width: 230px;
-}
-
-.contacts-link-icon-address {
-    margin-top: 5px;
 }
