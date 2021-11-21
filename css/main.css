@@ -994,6 +994,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .modal-form-area:hover,
@@ -1025,6 +1026,7 @@ img {
   margin-top: 4px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
   resize: none;
 }
 
