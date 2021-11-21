@@ -40,9 +40,6 @@
     font-style: inherit;
 }
 
-.contacts-list {
-}
-
 .contacts-item {
     margin-bottom: 20px;
 }
@@ -58,6 +55,7 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--third-text-color);
+    transition: color 250ms linear;
 }
 
 .contacts-link:hover,
@@ -75,10 +73,7 @@
     height: 24px;
     margin-right: 16px;
     stroke: #9da4bd;
-}
-
-.contant-link-address {
-    // width: 230px;
+    transition: stroke 250ms linear;
 }
 
 .link-underline {
@@ -99,4 +94,16 @@
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--third-text-color);
+}
+
+.contacts-item-address {
+    display: flex;
+}
+
+.contant-link-address {
+    width: 230px;
+}
+
+.contacts-link-icon-address {
+    margin-top: 5px;
 }
